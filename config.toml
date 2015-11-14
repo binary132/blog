@@ -1,0 +1,26 @@
+baseurl = "http://binary132.github.io/blog"
+languageCode = "en-us"
+title = "Bodie's Weblog"
+theme = "redlounge"
+copyright = "Bodie Solomon"
+
+[Author]
+	name = "Bodie Solomon"
+
+[Permalinks]
+	blog = "/:year/:month/:filename/"
+	code = "/:filename/"
+
+[Taxonomies]
+	tag = "tags"
+	series = "series"
+	series-desc = "series-desc"
+
+[params]
+	description = "The current affairs of SG."
+	twitter = "https://twitter.com/binary132"
+	github = "https://github.com/binary132"
+	gplus = "https://plus.google.com/+BodieSolomon"
+	disqusShortname = "binary132-hugo-blog"
+	Copyright = "© 2015 Bodie Solomon."
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Juju on Bodie&#39;s Weblog</title>
+    <link>http://binary132.github.io/blog/tags/juju/</link>
+    <description>Recent content in Juju on Bodie&#39;s Weblog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Bodie Solomon</copyright>
+    <lastBuildDate>Sun, 08 Feb 2015 15:13:51 -0500</lastBuildDate>
+    <atom:link href="http://binary132.github.io/blog/tags/juju/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Using Juju</title>
+      <link>http://binary132.github.io/blog/post/using-juju/</link>
+      <pubDate>Sun, 08 Feb 2015 15:13:51 -0500</pubDate>
+      
+      <guid>http://binary132.github.io/blog/post/using-juju/</guid>
+      <description>
+
+&lt;p&gt;Last night, I migrated Michelle&amp;rsquo;s Wordpress blog to a new Juju cluster on my DigitalOcean cloud.&lt;/p&gt;
+
+&lt;h1 id=&#34;it-just-works:17cc4a5aef794ff66650e445e2af39c8&#34;&gt;It just works!&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://i.imgur.com/TKrc7EM.png&#34;&gt;&lt;img src=&#34;http://i.imgur.com/TKrc7EM.png&#34; width=&#34;800px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t have time for a detailed post, so I&amp;rsquo;ll keep it brief.  I&amp;rsquo;m running the latest upstream of Juju, using &lt;a href=&#34;https://github.com/kapilt/juju-digitalocean&#34;&gt;kapilt/juju-digitalocean&lt;/a&gt;.  It was smooth sailing, mostly, and that &amp;ldquo;It just works!&amp;rdquo; feeling was great.  Linking up Wordpress and MySQL on the same VM, under two services, was clean and easy.&lt;/p&gt;
+
+&lt;p&gt;But, there&amp;rsquo;s that &lt;em&gt;&amp;ldquo;mostly&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;mostly:17cc4a5aef794ff66650e445e2af39c8&#34;&gt;&amp;hellip;mostly&lt;/h1&gt;
+
+&lt;p&gt;I ran into a bug where adding a memcached&amp;lt;-&amp;gt;Wordpress relation wasn&amp;rsquo;t installing ffpc on the Wordpress service correctly.  I need to do some more research.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Static Sites with Hugo</title>
+      <link>http://binary132.github.io/blog/post/ssg-hugo/</link>
+      <pubDate>Sun, 08 Feb 2015 04:27:00 -0500</pubDate>
+      
+      <guid>http://binary132.github.io/blog/post/ssg-hugo/</guid>
+      <description>
+
+&lt;p&gt;Welcome to my new weblog, proudly hosted on &lt;a href=&#34;https://github.com/binary132/blog&#34;&gt;Github Pages&lt;/a&gt; and built with &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Last night, I migrated Michelle&amp;rsquo;s Wordpress site to a VM on my new &lt;a href=&#34;http://juju.ubuntu.com&#34;&gt;Juju&lt;/a&gt; cluster.  My experience is &lt;a href=&#34;../using-juju/&#34;&gt;here&lt;/a&gt;.  I&amp;rsquo;m excited to migrate my existing instances and content into Juju, and to start using it to manage experiments.&lt;/p&gt;
+
+&lt;p&gt;On a whim, I began hunting for a blog server written in Go, but I realized quickly that it would be foolish not to use static page generation, hosted on Github, instead.  My first (re)-discovery was Hugo, and I&amp;rsquo;ve decided to go with it.&lt;/p&gt;
+
+&lt;p&gt;Hugo is lovely, but I hesitated to choose it.  Go is a tight, simple, fast, and &lt;em&gt;compiled&lt;/em&gt; language.  To put it another way, it doesn&amp;rsquo;t support dynamic code hotloading; it doesn&amp;rsquo;t support dynamic library loading; it doesn&amp;rsquo;t support a plugin architecture.  I chose Hugo not because of its great flexibility, but because it does most of what I could need for this project.&lt;/p&gt;
+
+&lt;p&gt;But&amp;hellip; it got me thinking.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-go-way:32ab7241d48fcc174c877413a917f8cf&#34;&gt;The Go Way&lt;/h2&gt;
+
+&lt;p&gt;What would be the Go Way to achieve the same functionality offered easily by dynamic languages?  A DSL extensible by a core set of simple transforms?  This idea quickly evolved into simple interpreted language in my mind.  Nope.  How about a pipeline linked over RPC?  Okay, maybe.  Interfaces and base types could be defined in a package to let users &lt;strong&gt;easily&lt;/strong&gt; define nodes.&lt;/p&gt;
+
+&lt;p&gt;I started chatting with the guys at Freenode &lt;code&gt;#go-nuts&lt;/code&gt; (which is a sure-fire way to start a &lt;del&gt;fight&lt;/del&gt; &lt;em&gt;well-reasoned discussion&lt;/em&gt;.)  To my surprise, the first response wasn&amp;rsquo;t about Go.  The first suggestion was &lt;a href=&#34;http://jaspervdj.be/hakyll&#34;&gt;Hakyll&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To create sites in Hakyll, the user writes a simple program importing and using Hakyll&amp;rsquo;s tools, and Hakyll makes the site based on the user&amp;rsquo;s directives.  That totally inverted my thinking.  I won&amp;rsquo;t deny that implementing such a package in Go could result in a very ugly UX.&lt;/p&gt;
+
+&lt;h2 id=&#34;and-what-s-wrong-with-it:32ab7241d48fcc174c877413a917f8cf&#34;&gt;and what&amp;rsquo;s wrong with it&lt;/h2&gt;
+
+&lt;p&gt;If there&amp;rsquo;s one thing I dislike about Go, it&amp;rsquo;s ironically one of its greatest strengths: its syntax.  Normally, I&amp;rsquo;m not a nitpicker about syntax.  But Go lacks a great deal of the expressiveness I&amp;rsquo;ve come to take for granted with languages like Clojure and Scala.  Even Python has list comprehensions.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m still mulling over the idea of a Hakyll-like static generator.  I have a toolkit in mind for working with grammars and syntax manipulation in Go, and it could be perfect for creating a clean UX for this.  I might implement it at a later time.&lt;/p&gt;
+
+&lt;p&gt;For now, my plate is too full.  My focus belongs on my work, and on creating the first releases of &lt;a href=&#34;https://github.com/synapse-garden/dash&#34;&gt;Dash&lt;/a&gt; and &lt;a href=&#34;https://github.com/mindfork&#34;&gt;Mindfork&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

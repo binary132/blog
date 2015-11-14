@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Synapsegarden on Bodie&#39;s Weblog</title>
+    <link>http://binary132.github.io/blog/tags/synapsegarden/</link>
+    <description>Recent content in Synapsegarden on Bodie&#39;s Weblog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Bodie Solomon</copyright>
+    <lastBuildDate>Tue, 10 Feb 2015 20:47:50 -0500</lastBuildDate>
+    <atom:link href="http://binary132.github.io/blog/tags/synapsegarden/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Rebirth of Mindfork</title>
+      <link>http://binary132.github.io/blog/post/mindfork/</link>
+      <pubDate>Tue, 10 Feb 2015 20:47:50 -0500</pubDate>
+      
+      <guid>http://binary132.github.io/blog/post/mindfork/</guid>
+      <description>
+
+&lt;p&gt;Today is the day I renew my work on &lt;a href=&#34;https://github.com/mindfork&#34;&gt;Mindfork&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;why:2a92379f66ba7fb492102b896caa6b2a&#34;&gt;Why?&lt;/h1&gt;
+
+&lt;p&gt;Mindfork began as an idea for a calendar or todo app which keeps track of performance or other metrics, offering the user guidance toward goals.  It quickly evolved into much more, but was never completed beyond a few quick sketches.&lt;/p&gt;
+
+&lt;p&gt;Mindfork is meant not just to help people work together, but to help us learn together.  In university, I never learned about the &amp;ldquo;Real World&amp;rdquo; ecosystem of tools and ideas until I pursued that knowledge for myself, and there&amp;rsquo;s no roadmap.  At all.  A huge goal of Mindfork is to bring people with different knowledge together to create a community where what needs to be learned can be learned.&lt;/p&gt;
+
+&lt;p&gt;Today, the idea of a resume-as-a-service reminded me of the user skills tracker I imagined as a core feature of Mindfork.&lt;/p&gt;
+
+&lt;h2 id=&#34;toxic-culture:2a92379f66ba7fb492102b896caa6b2a&#34;&gt;Toxic Culture&lt;/h2&gt;
+
+&lt;p&gt;Coming out of school, I quickly realized that the Real World of software engineers isn&amp;rsquo;t a curious place full of learning; it is &lt;em&gt;brutally cutthroat&lt;/em&gt;.  The culture in some communities is completely toxic, save for a very few people.  Many engineers and sysadmins seem to exist solely for the purpose of aggrandizing themselves at the expense of others, belittling and mocking the less talented or knowledgeable, and creating cults around arcane and extreme code cultures.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;culture du jour&lt;/em&gt; is a moving target; one can never strive to become excellent in it without being seen as a hapless follower, hopelessly behind the times as the Gnostic wizards of code pursue ever more obscure, powerful solutions to problems that may or may not ever exist.  And of course backlash cultures then spring into existence, equally bigoted and ignorant with an equally pompous attitude towards the hopelessly un-hip.&lt;/p&gt;
+
+&lt;h2 id=&#34;ignorance:2a92379f66ba7fb492102b896caa6b2a&#34;&gt;Ignorance&lt;/h2&gt;
+
+&lt;p&gt;There seem to be thousands of such systems and tools, and communities revolving around them.  In today&amp;rsquo;s industry, finding a job often seems to be less about being a good engineer, and more about being good at guessing what trends are trendiest.  Most of us in the software world don&amp;rsquo;t even need me to give a few examples; Big Data is a catchword which seems to constantly roll out of the mouths of the ignorant, along with other phrases, such as &amp;ldquo;webscale&amp;rdquo;, &amp;ldquo;enterprise&amp;rdquo;, and so on.  (Am I, too, guilty of mockery and elitism?  Perhaps a bit.)&lt;/p&gt;
+
+&lt;h1 id=&#34;the-solution:2a92379f66ba7fb492102b896caa6b2a&#34;&gt;The Solution&lt;/h1&gt;
+
+&lt;p&gt;I began working at DigitalOcean in June of 2013.  I was incredibly excited.  This was it.  I was getting involved in the hot stuff.  I felt like I&amp;rsquo;d won the lottery.  I was full of fire and love for the product, and for life; my daughter had been born just a week or two before, I&amp;rsquo;d just moved across the country, and I was full of the dream that I could achieve whatever I set my heart and mind to.  So I did.  I threw myself head-on into learning everything I could about distributed systems and new ideas about concurrent programming, with tools like Go, Erlang (which was experiencing a minor resurge in popularity), and Scala.&lt;/p&gt;
+
+&lt;p&gt;I had access to free cloud hosting, and I was liberal with trial credits.  I was highly involved with the community.  I&amp;rsquo;ve always been a person who loves teaching and learning, and I was available to communicate with people who came to me with questions.  And I was learning, too.&lt;/p&gt;
+
+&lt;h2 id=&#34;community-power:2a92379f66ba7fb492102b896caa6b2a&#34;&gt;Community Power&lt;/h2&gt;
+
+&lt;p&gt;I saw the vast potential of the community organized around learning together.  I saw that with huge numbers of people, we could accomplish nearly anything imaginable.  It was just a question of how; humans aren&amp;rsquo;t fast enough or smart enough to manage projects at that scale unless it&amp;rsquo;s their full-time job, and such jobs don&amp;rsquo;t come easily with free software.&lt;/p&gt;
+
+&lt;p&gt;Now, with cheap clusters at our fingertips in the cloud, we had tools powerful enough to manage thousands of people, working together in real time.  We had tools we could all work on, together, using DCVS like Git.  And we had tools which could really perform, in concurrency-oriented runtimes like Go and Nodejs, and datastores we could put enormous amounts of data in.&lt;/p&gt;
+
+&lt;p&gt;We just needed the software to do it.  That idea was born as Mindfork.&lt;/p&gt;
+
+&lt;p&gt;It was a very &lt;em&gt;webscale&lt;/em&gt; moment in the &lt;em&gt;big data cloud&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;origins-and-progress:2a92379f66ba7fb492102b896caa6b2a&#34;&gt;Origins and Progress&lt;/h1&gt;
+
+&lt;p&gt;Today, I started on the first working agent, a simple login service called &lt;a href=&#34;https://github.com/mindfork/gatekeeper&#34;&gt;Gatekeeper&lt;/a&gt;.  Together with &lt;a href=&#34;http://bluevisual.tv&#34;&gt;Kevin Weber&lt;/a&gt;, I&amp;rsquo;m building a web dashboard framework, &lt;a href=&#34;https://github.com/synapse-garden/dash&#34;&gt;Dash&lt;/a&gt;, in tandem with Mindfork, so that they can grow and evolve together, giving users easy access to the early power of Mindfork.  Dash is the software which powers &lt;a href=&#34;http://synapsegarden.net&#34;&gt;synapsegarden.net&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The purpose of Mindfork is to create a framework for automated community collaboration, centered around free software.  Mindfork is &lt;em&gt;free&lt;/em&gt; software (see &lt;a href=&#34;https://www.gnu.org/philosophy/free-sw.html&#34;&gt;here&lt;/a&gt; for a meaningful definition of &lt;em&gt;free&lt;/em&gt;) which intelligently manages data.  Anyone can run it and use it.  It is at heart all about free exchange of ideas, to create a new ecosystem where people collaborate to gain power, instead of competing.&lt;/p&gt;
+
+&lt;p&gt;SynapseGarden is the learning, growing, collaborative community which will be built around Mindfork.&lt;/p&gt;
+
+&lt;h1 id=&#34;mindfork-basics:2a92379f66ba7fb492102b896caa6b2a&#34;&gt;Mindfork Basics&lt;/h1&gt;
+
+&lt;p&gt;A Mindfork cluster is built out of simple &amp;ldquo;Agents&amp;rdquo; which each have a single responsibility, and communicate with each other over the network to find out what they need to know.  Agents can be forked (copied) and built upon, and new improved Agents given back to the ecosystem; clusters of Agents can create a holistic view of data, giving the owner and users insight and projections.&lt;/p&gt;
+
+&lt;p&gt;The purpose is to create an analytic suite for communities of humans.  How do people work best?  Maybe some people work best in the morning, and some work best at night.  Maybe some people work best with others, while others work best alone.  Mindfork helps us ask and answer these kinds of questions.&lt;/p&gt;
+
+&lt;p&gt;For now, the only question it will answer is, &amp;ldquo;are you logged in?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;More to come.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

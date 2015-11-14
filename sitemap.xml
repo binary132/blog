@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://binary132.github.io/blog/</loc>
+    <lastmod>2015-02-10T20:47:50-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://binary132.github.io/blog/post/mindfork/</loc>
+    <lastmod>2015-02-10T20:47:50-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://binary132.github.io/blog/post/using-juju/</loc>
+    <lastmod>2015-02-08T15:13:51-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://binary132.github.io/blog/post/ssg-hugo/</loc>
+    <lastmod>2015-02-08T04:27:00-05:00</lastmod>
+  </url>
+  
+</urlset>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <title> Using Juju // Bodie&#39;s Weblog </title>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Bodie Solomon">
+
+  <meta property="og:title" content="Using Juju" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="http://binary132.github.io/blog/post/using-juju/" />
+
+
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/base-min.css">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+  
+  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+  
+  
+
+  <link rel="stylesheet" href="http://binary132.github.io/blog//css/redlounge.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,100,700,300,500,600,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Bodie&#39;s Weblog" />
+
+  
+  <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/tomorrow-night-bright.min.css">
+  <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+
+  
+
+  
+</head>
+
+<body>
+	
+
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="header">
+    
+
+    
+    
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><span class="nav-item-separator">//</span><a href="http://binary132.github.io/blog/">Home</a></li>
+        
+      </ul>
+    </nav>
+
+    
+
+  </div>
+</div>
+
+	
+	
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+		<a name="top"></a>
+		
+
+		
+			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents">
+<ul>
+<li><a href="#it-just-works:17cc4a5aef794ff66650e445e2af39c8">It just works!</a></li>
+<li><a href="#mostly:17cc4a5aef794ff66650e445e2af39c8">&hellip;mostly</a></li>
+</ul>
+</nav>
+		    </div>
+		    
+	    
+  		<section class="post">
+            <h1 class="post-title">
+              <a href="/blog/post/using-juju/">Using Juju</a>
+            </h1>
+            <h3 class="post-subtitle">
+            	
+            </h3>
+            
+            	<span class="post-date">
+                	<span class="post-date-day"><sup>8</sup></span><span class="post-date-separator">/</span><span class="post-date-month">Feb</span> <span class="post-date-year">2015</span>
+            	</span>
+            	
+            
+            	
+            		<span class="post-author-single">By <a class="post-author"  target="">Bodie Solomon</a></span>
+            		
+
+
+
+            	
+            
+
+			
+				<div class="post-categories">
+				
+					<a class="post-category post-category-ops" href="/categories/ops">Ops</a> 
+				
+				</div>
+			
+
+			
+
+			
+
+            
+
+<p>Last night, I migrated Michelle&rsquo;s Wordpress blog to a new Juju cluster on my DigitalOcean cloud.</p>
+
+<h1 id="it-just-works:17cc4a5aef794ff66650e445e2af39c8">It just works!</h1>
+
+<p><a href="http://i.imgur.com/TKrc7EM.png"><img src="http://i.imgur.com/TKrc7EM.png" width="800px" /></a></p>
+
+<p>I don&rsquo;t have time for a detailed post, so I&rsquo;ll keep it brief.  I&rsquo;m running the latest upstream of Juju, using <a href="https://github.com/kapilt/juju-digitalocean">kapilt/juju-digitalocean</a>.  It was smooth sailing, mostly, and that &ldquo;It just works!&rdquo; feeling was great.  Linking up Wordpress and MySQL on the same VM, under two services, was clean and easy.</p>
+
+<p>But, there&rsquo;s that <em>&ldquo;mostly&rdquo;</em>.</p>
+
+<h1 id="mostly:17cc4a5aef794ff66650e445e2af39c8">&hellip;mostly</h1>
+
+<p>I ran into a bug where adding a memcached&lt;-&gt;Wordpress relation wasn&rsquo;t installing ffpc on the Wordpress service correctly.  I need to do some more research.</p>
+
+	
+			
+
+			
+				<div class="tags-list">
+					<span class="dark-red">Tags</span><span class="decorative-marker">//</span>
+					
+	                <a class="post-tag post-tag-juju" href="/tags/juju">juju</a>, 
+	                
+	                <a class="post-tag post-tag-hosting" href="/tags/hosting">hosting</a>, 
+	                
+				</div>
+			
+
+			
+				<div class="paging">
+					<span class="paging-label">More Reading</span>
+					
+					<div class="paging-newer">
+						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
+						<a class="paging-link" href="/blog/post/mindfork/">Rebirth of Mindfork</a>
+		            </div>
+		            
+
+					
+					<div class="paging-older">
+						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
+			            <a class="paging-link" href="/blog/post/ssg-hugo/">Static Sites with Hugo</a>
+		            </div>
+		            
+	            </div>
+            
+          </section>
+          
+          	
+          
+        
+      <div class="footer">
+	<hr class="thin" />
+	<div class="pure-menu pure-menu-horizontal pure-menu-open">
+		<ul class="footer-menu">
+		
+		</ul>
+	</div>
+
+	<p>© 2015 Bodie Solomon.
+	Licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons ASA 4.0 International</a>.</p>
+</div>
+
+    </div>
+  </div>
+	
+
+	
+
+  
+</body>
+</html>

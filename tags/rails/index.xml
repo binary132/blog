@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rails on SynapseGarden Weblog</title>
+    <link>http://localhost:1313/tags/rails/</link>
+    <description>Recent content in Rails on SynapseGarden Weblog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Bodie Solomon</copyright>
+    <lastBuildDate>Wed, 24 Jun 2015 10:34:50 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/rails/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>RVM on Gentoo</title>
+      <link>http://localhost:1313/post/gentoo-rvm/</link>
+      <pubDate>Wed, 24 Jun 2015 10:34:50 -0400</pubDate>
+      
+      <guid>http://localhost:1313/post/gentoo-rvm/</guid>
+      <description>
+
+&lt;p&gt;&lt;code&gt;RVM is bad and Gentoo is good&lt;/code&gt;, and other blasphemies.&lt;/p&gt;
+
+&lt;h2 id=&#34;rails:9f48e36a41ea6f9357ec1699faa1616e&#34;&gt;Rails&lt;/h2&gt;
+
+&lt;p&gt;Today I decided to expand my repertoire a bit with Rails.  I&amp;rsquo;m mostly focused
+on backend nuts and bolts, but I need a full-stack framework under my belt,
+and Ruby on Rails is arguably the best option due to its simplicity and ease
+to get off the ground.  It&amp;rsquo;s obviously very popular &amp;ndash; I&amp;rsquo;ve had lots of
+people insist I explore it &amp;ndash; so I&amp;rsquo;m finally getting around to it.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve always avoided fullstack work in favor of API + frontend.  What can I
+say?  I&amp;rsquo;m a control freak.  I adore simple, explicit interfaces and precise
+expectations.  The last time I explored Rails, it seemed like a huge,
+impenetrable monstrosity.  But it continues to be one of the most well-known
+and useful tools in the free world, so learn it I shall.&lt;/p&gt;
+
+&lt;h2 id=&#34;gentoo:9f48e36a41ea6f9357ec1699faa1616e&#34;&gt;Gentoo&lt;/h2&gt;
+
+&lt;p&gt;However, I discovered that when I chose to use &lt;a href=&#34;http://img1.wikia.nocookie.net/__cb20140603003134/pokemon/images/7/7e/Moon_Stone_anime.png&#34;&gt;moon stone&lt;/a&gt;
+on my workstation, I overlooked a few details of its evolution.
+You see, Gentoo likes to manage packages GENTOO&amp;rsquo;S way.  Mixing package
+managers usually isn&amp;rsquo;t an issue on other systems &amp;ndash; most people know better
+than to &lt;a href=&#34;https://help.ubuntu.com/lts/serverguide/ruby-on-rails.html&#34;&gt;use &lt;code&gt;apt-get&lt;/code&gt; to install Rails on an LTS distribution&lt;/a&gt; &amp;ndash;
+but Gentoo is highly opinionated about package and dependence versioning, so
+most Gentoo users would &lt;a href=&#34;https://wiki.gentoo.org/wiki/Project:Ruby&#34;&gt;use &amp;lsquo;eselect&amp;rsquo; to choose their version of Ruby&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When I went to &lt;code&gt;gem install rails&lt;/code&gt;, everything seemed fine.  However, &lt;code&gt;rails&lt;/code&gt;
+was not found by my shell.  It turns out &lt;code&gt;rvm&lt;/code&gt; and `&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
